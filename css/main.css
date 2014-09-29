@@ -1,6 +1,8 @@
-body {
-    overflow: hidden;
-    background-color: grey;
+
+body {}
+ .full {
+    width: 100%;
+    height: 100%;
 }
 #container {
     z-index: 1;
@@ -8,7 +10,7 @@ body {
 #head {
     z-index: 9;
     position: fixed;
-    display: block;
+    display: inline-block;
     width: auto;
     height: auto;
     left: 0;
@@ -16,9 +18,11 @@ body {
     top: 3.3em;
 }
 #head img {
-    width: auto;
+    width: 200px;
 }
+
 .menu {
+    font-family: 'Source Code Pro';
     z-index: 9;
     position: fixed;
     display: block;
@@ -37,6 +41,7 @@ body {
     background-color: white;
 }
 li.jump {
+
     z-index: 9;
     margin: 0 0 20px 0;
     background-color: white;
@@ -96,18 +101,22 @@ li.wTitle {
 /* for slides
     * --------------------------------------- */
 
-.intro {
-    text-align: right;
-    font-size: 1.8em;
-    font-family: ‘Times New Roman’, Times, serif;
-    color: #333333;
+.centerWrap {
     width: 500px;
+    display: inline-block;
+}
+.intro {
+    background-color: white;
+    text-align: right;
+    font-size: 1.4em;
+    font-family: 'Source Code Pro';
+    color: #333333;
+    width: 250px;
     font-weight: lighter;
     font-style: oblique;
-    border-bottom: solid;
-    border-width: 7px;
-    border-color: #333333;
-    padding: 40px 0 10px 0;
+    /* display: inline-block; */
+    float: right;
+    margin-top: 46px;
 }
 /* Centered texts in each section
     * --------------------------------------- */
@@ -141,23 +150,72 @@ li.wTitle {
     margin-bottom: 240px;
     display: block;
 }
+.mulWrap {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+    max-width: 500px;
+    /*     -moz-column-count:3;
+    -moz-column-gap: 3%;
+    -moz-column-width: 30%;
+    -webkit-column-count:3;
+    -webkit-column-gap: 3%;
+    -webkit-column-width: 30%;
+    column-count: 3;
+    column-gap: 3%;
+    column-width: 30%;*/
+}
 .mulpic {
-
+    display: inline-block;
+    width: 244px;
 }
 .mulpic a img {
-    float: left;
-    margin: 0 3px 6px 3px;
-    width: 244px;
+    /* width: 244px;*/
 }
 .mulfirst {
     display: inline-block;
 }
 .mulfirst img {
-    width: 496px;
-}
-.mulWrap {
-
+    width: 500px;
 }
 .mulWrap img {} #tumblr-wrap {
     margin-top: 50px;
+}
+.boxContainer {
+    width: 500px;
+}
+.picBox {
+    height: auto;
+    float: left;
+    margin-top: 180px;
+}
+.profile {
+    float: right;
+    text-align: justify;
+    width: 300px;
+    font-size: 12px;
+    font-family: YuMincho, '游明朝', serif;
+}
+.contact {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 280px;
+}
+ul.infoWrap {
+    overflow: hidden;
+    font-family: 'Source Code Pro';
+    font-style: oblique;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /*display: inline-block;*/
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
 }
